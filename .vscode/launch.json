@@ -1,0 +1,23 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug",
+			"type": "factoriomod",
+			"request": "launch",
+			"factorioPath": "${env:FACTORIO_EXE}",
+			"adjustMods": {
+				"more-sorting": true,
+				"flib": true,
+				"EditorExtensions": true
+			},
+			"disableExtraMods": true,
+			"hookControl": ["more-sorting"],
+			"factorioArgs": [
+				"--disable-audio",
+				"--disable-prototype-history",
+				"--load-scenario", "base/freeplay"
+			]
+		}
+	]
+}
